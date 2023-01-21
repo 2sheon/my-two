@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>
+
+</title>
+<style>
+    /*
+    h1{
+        border-width:10px ;
+        border-color:green ;
+        border-style: solid;
+        
+        border 10px green solid; 와 같다
+        
+        padding:20px;
+        margin:20px;
+        text-align:center;
+    }
+    */
+    #give{
+        
+        display:grid;
+        grid-template-columns: 150px 1fr ;
+
+    }
+    
+    div{
+        border: red 5px solid;
+    }
+    @media(max-width:800px){
+        div{
+            display:none;
+        }
+    }
+
+</style>    
+</head>
+
+<body>
+<div id="give">
+<div>css</div>
+<div>Description
+    As with all shorthand properties, any omitted sub-values will be set to their initial value. Importantly, border cannot be used to specify a custom value for border-image, but instead sets it to its initial value, i.e., none.
+    
+    The border shorthand is especially useful when you want all four borders to be the same. To make them different from each other, however, you can use the longhand border-width, border-style, and border-color properties, which accept different values for each side. Alternatively, you can target one border at a time with the physical (e.g., border-top ) and logical (e.g., border-block-start) border properties.</div>
+</div>
+</body>
+</html>
